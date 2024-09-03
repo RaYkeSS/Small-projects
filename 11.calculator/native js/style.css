@@ -1,0 +1,181 @@
+:root {
+    --text: #e6ebe8;
+    --background: #0e1511;
+    --primary: #9fccb1;
+    --secondary: #2e6f49;
+    --accent: #57c986;
+    
+
+    --text: rgb(230, 235, 232);
+    --background: rgb(14, 21, 17);
+    --primary: rgb(159, 204, 177);
+    --secondary: rgb(46, 111, 73);
+    --accent: rgb(87, 201, 134);
+    
+    --fz: 2rem;
+    --gap: 20px;
+}
+
+body {
+    background-color: var(--secondary);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculator {
+    padding: 40px;
+    width: 20vw;
+    border-radius: 20px;
+    background-color: var(--background);
+    overflow: hidden;
+}
+
+#display {
+    color: var(--text);
+    background-color: var(--background);
+    border: none;
+    outline: none;
+    font-size: calc(var(--fz) * 2);
+    width: 100%;
+    text-align: end;
+    margin-bottom: 20px;
+}
+
+#keys {
+    color: var(--text);
+    background-color: var(--background);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.key {
+    background-color: var(--primary);
+    border-radius: 20px;
+    border: none;
+    padding: 20px;
+    font-size: var(--fz);
+    color: var(--text);
+    flex-basis: calc(25% - var(--gap));
+    transition: background-color .2s ease-in-out;
+}
+
+.oper {
+    background-color: var(--secondary);
+}
+
+.unique {
+    background-color: var(--accent);
+}
+
+#keys button:nth-child(1) {
+    order: 17;
+    flex-basis: 50%;
+    /* 0 */
+}
+
+#keys button:nth-child(2) {
+    order: 13;
+    /* 1 */
+}
+
+#keys button:nth-child(3) {
+    order: 14;
+    /* 2 */
+}
+
+#keys button:nth-child(4) {
+    order: 15;
+    /* 3 */
+}
+
+#keys button:nth-child(5) {
+    order: 9;
+    /* 4 */
+}
+
+#keys button:nth-child(6) {
+    order: 10;
+    /* 5 */
+}
+
+#keys button:nth-child(7) {
+    order: 11;
+    /* 6 */
+}
+
+#keys button:nth-child(8) {
+    order: 5;
+    /* 7 */
+}
+
+#keys button:nth-child(9) {
+    order: 6;
+    /* 8 */
+}
+
+#keys button:nth-child(10) {
+    order: 7;
+    /* 9 */
+}
+
+#keys button:nth-child(11) {
+    order: 18;
+    /* . */
+}
+
+#keys button:nth-child(12) {
+    order: 16;
+    /* + */
+}
+
+#keys button:nth-child(13) {
+    order: 12;
+    /* - */
+}
+
+#keys button:nth-child(14) {
+    order: 8;
+    /* * */
+}
+
+#keys button:nth-child(15) {
+    order: 4;
+    /* / */
+}
+
+#keys button:nth-child(16) {
+    order: 1;
+    /* AC */
+}
+
+#keys button:nth-child(17) {
+    order: 19;
+    /* = */
+}
+
+#keys button:nth-child(18) {
+    order: 2;
+    /* +- */
+}
+
+#keys button:nth-child(19) {
+    order: 3;
+    /* % */
+}
+
+.key:hover {
+    background-color: var(--secondary);
+}
+
+.oper:hover {
+    background-color: var(--primary);
+}
+

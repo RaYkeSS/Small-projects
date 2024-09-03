@@ -1,0 +1,19 @@
+.mouse {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid #1A4D2E;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 999;
+    pointer-events: none;
+    transition: width 0.1s ease-in-out, height 0.1s ease-in-out, background-color 0.1s ease-in-out, border-width 0.1s ease-in-out;
+}
+
+.mouse-active {
+    /* scale: 2; */
+    width: 48px;
+    height: 48px;
+    background-color: rgba(79, 111, 82, .3);
+    border-width: 2px;
+}

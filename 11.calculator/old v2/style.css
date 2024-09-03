@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    padding: 30px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    margin-inline: auto;
+    justify-content: center;
+}
+
+#calc {
+    flex-direction: column;
+    width: 300px;
+}
+
+.nav {
+    margin-bottom: 30px;
+}
+
+.data {
+    /* height: 90px; */
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.memory {
+    font-size: 24px;
+    border: none;
+}
+
+.current {
+    font-size: 48px;
+    border: none;
+    text-align: end;
+    max-width: 100%;
+}
+
+.numbers {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.num-actions {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.num-action {
+    font-size: 24px;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.operations {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.num {
+    font-size: 24px;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    /* background-color: transparent; */
+}
+
+.operation {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    /* background-color: transparent; */
+}
+
+button:active {
+    background-color: red;
+}

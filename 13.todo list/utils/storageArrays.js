@@ -1,0 +1,2 @@
+const myStorage = [];
+const shoppingStorage = [];

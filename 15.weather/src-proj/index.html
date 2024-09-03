@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./css/output.css">
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+</head>
+<body class="bg-gradient-to-br from-blue-400 to-purple-600 min-h-screen flex justify-center items-center">
+    <div class="max-w-md bg-white p-8 rounded-md shadow-lg w-full h-auto">
+        <h1 class="text-3xl font-semibold mb-6 text-green-500 text-center">Weather App</h1>
+        <form id="weather-form" class="mb-6 relative">
+            <label for="city" class="block text-blue-700 font-medium mb-2">Enter City:</label>
+            <div class="flex items-center">
+                <input type="text" id="city" name="city" class="mt-1 px-4 py-2 block w-64 h-12 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500 placeholder-gray-500" placeholder="Enter City Name">
+                <button type="submit" class="ml-1 bg-blue-500 text-white py-2 px-4 h-12 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
+                    Get Weather
+                </button>
+            </div>
+        </form>
+        <div id="weather-info" class="grid grid-cols-2 gap-4"></div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
