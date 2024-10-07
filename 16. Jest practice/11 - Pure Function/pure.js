@@ -1,16 +1,11 @@
 // setPrice(item: Object, price: Number) => item: Object
 const setPrice = (item, price) => {
-  const i = { ...item };
-  item[price] = price;
-  return i;
+  return { ...item, price };
 };
 
 // addToCart(cart: Array, item: Object) => cart: Array
 const addToCart = (cart, item) => {
-  const c = cart.length ? [...cart] : [];
-  c.push(item);
-  return c;
+  return cart.concat(item);
 };
 
-module.exports = setPrice;
-module.exports = addToCart;
+module.exports = [setPrice, addToCart];

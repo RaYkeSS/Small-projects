@@ -1,5 +1,4 @@
-const setPrice = require("./pure");
-const addToCart = require("./pure");
+const [setPrice, addToCart] = require("./pure");
 
 describe("setPrice()", () => {
   test("should set the price in the given item object, immutably.", () => {
