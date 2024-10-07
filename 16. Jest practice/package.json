@@ -1,0 +1,14 @@
+{
+  "name": "16.-jest-practice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
