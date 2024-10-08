@@ -34,4 +34,4 @@ const lookup = (login, property) => {
   return person[property];
 };
 
-module.exports = lookup;
+export default lookup;

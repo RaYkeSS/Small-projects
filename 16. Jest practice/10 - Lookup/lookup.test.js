@@ -1,4 +1,4 @@
-const lookup = require("./lookup");
+import lookup from "./lookup";
 
 describe("Lookup", () => {
   test("1", () => {

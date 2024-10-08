@@ -8,4 +8,4 @@ const addToCart = (cart, item) => {
   return cart.concat(item);
 };
 
-module.exports = [setPrice, addToCart];
+export { setPrice, addToCart };

@@ -1,4 +1,6 @@
-const [setPrice, addToCart] = require("./pure");
+import { expect, describe, test } from "@jest/globals";
+
+import { setPrice, addToCart } from "./pure";
 
 describe("setPrice()", () => {
   test("should set the price in the given item object, immutably.", () => {
