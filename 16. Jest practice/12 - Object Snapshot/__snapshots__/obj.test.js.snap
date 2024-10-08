@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`usersReducer snapshots matching should append to state array 1`] = `
+{
+  "users": [
+    {
+      "handle": "kwelch",
+      "name": "Kyle Welch",
+    },
+  ],
+}
+`;
+
+exports[`usersReducer snapshots matching should append to state array 2`] = `
+{
+  "users": [
+    {
+      "handle": "kwelch",
+      "name": "Kyle Welch",
+    },
+    {
+      "handle": "jsmith",
+      "name": "Jane Smith",
+    },
+  ],
+}
+`;
+
+exports[`usersReducer snapshots matching should update when handle matches 1`] = `
+{
+  "users": [
+    {
+      "handle": "kwelch",
+      "name": "Kyle Welch",
+    },
+    {
+      "handle": "jsmith",
+      "name": "Jane Smith",
+    },
+    {
+      "handle": "kwelch",
+      "name": "Kyle Welch",
+      "role": "Test Driven Developer",
+    },
+  ],
+}
+`;

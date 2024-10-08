@@ -15,5 +15,3 @@ export function setupStore(preloadedState) {
 }
 
 const store = setupStore();
-store.dispatch(addUser("Kevin"));
-export const logo = store.getState();
